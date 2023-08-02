@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: url(../img/fondo-de-pantalla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#pantalla-inicial{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    margin: 60px 0;
+}
+
+#pantalla-inicial p{
+    font-size: 35px;
+    font-weight: 800;
+    color: #0b0b34;
+}
+
+.btn{
+    border: none;
+    background-color: #c0750c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+#pantalla-juego{
+    display: none;
+}
+
+.pantalla-juego{
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.pantalla-juego img{
+    max-width: 400px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.opciones{
+    max-width: 400px;
+    margin: auto;
+}
+
+.opcion{
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 400px;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.opcion .letra{
+    background-color: #bc740f;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    border: 5px solid #fff;
+    position: relative;
+}
+
+.opcion .nombre{
+    background: #fff;
+    width: 100%;
+    font-size: 25px;
+    position: absolute;
+    z-index: -2;
+    border-radius: 0 20px 20px 0;
+    padding: 7px 0 7px 30px;
+}
+
+.opcion .nombreAcertada{
+    background-color: yellowgreen;
+    color: #fff;
+}
+
+.opcion .letraAcertada{
+    background-color: yellowgreen;
+    color: #fff;
+}
+
+.opcion .nombreNoAcertada{
+    background-color: darkred;
+    color: #fff;
+}
+
+.opcion .letraNoAcertada{
+    background-color: darkred;
+    color: #fff;
+}
+
+#pantalla-final{
+    display: none;
+    text-align: center;
+}
+
+#pantalla-final #numCorrectas{
+    background-color: chartreuse;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+#pantalla-final #numIncorrectas{
+    background-color: rgb(217, 17, 17);
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+}
+
+h1{
+    width: fit-content;
+    background-color: #fff;
+    margin: 40px auto;
+    border-radius: 60px;
+    box-shadow: 5px 5px 0 #000;
+    padding: 20px 30px;
+}
+
+// Footer
+
+// footer{
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     position: fixed;
+//     background-color: #000;
+//     color: #000;
+//     font-size: 12px;
+//     color: #fff;
+//     padding: 5px;
+//     text-align: center;
+// }
